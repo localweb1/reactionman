@@ -1,0 +1,48 @@
+object Form3: TForm3
+  Left = 569
+  Height = 240
+  Top = 264
+  Width = 320
+  BorderStyle = bsNone
+  Caption = 'ReactionTime Test'
+  ClientHeight = 240
+  ClientWidth = 320
+  Color = 65363
+  FormStyle = fsSystemStayOnTop
+  OnClick = FormClick
+  OnClose = FormClose
+  OnCreate = FormCreate
+  LCLVersion = '2.0.12.0'
+  Visible = True
+  WindowState = wsFullScreen
+  object Shape1: TShape
+    Left = 120
+    Height = 128
+    Top = 32
+    Width = 128
+    Brush.Color = 7602159
+    OnChangeBounds = Shape1ChangeBounds
+    OnMouseDown = Shape1MouseDown
+    OnMouseEnter = Shape1MouseEnter
+    OnMouseLeave = Shape1MouseLeave
+    Shape = stCircle
+  end
+  object Timer1: TTimer
+    Interval = 450
+    OnTimer = Timer1Timer
+    Left = 8
+    Top = 56
+  end
+  object Timer2: TTimer
+    Interval = 1
+    OnTimer = Timer2Timer
+    Left = 8
+    Top = 8
+  end
+  object Timer3: TTimer
+    Interval = 2
+    OnTimer = Timer3Timer
+    Left = 8
+    Top = 112
+  end
+end
